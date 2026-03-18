@@ -452,22 +452,20 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "PS"
-				(at -10.16 5.842 0)
+			(property "Reference" "PS1"
+				(at 0 9.525 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" "PEME1-S5-S5-S"
-				(at -10.16 -7.62 0)
+			(property "Value" "DRS1-12-S12-S"
+				(at 0 6.985 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Footprint" "Converter_DCDC:CONV_PEME1-S5-S5-S"
@@ -480,7 +478,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://www.mouser.co.uk/ProductDetail/CUI-Inc/DRS1-12-S12-S?qs=sGAEpiMZZMsc0tfZmXiUnTr9pnMRotOJRoPmEQ7ig4f1IrxG7ygsQw%3D%3D"
 				(at 0 0 0)
 				(effects
 					(font
@@ -499,7 +497,7 @@
 					(hide yes)
 				)
 			)
-			(property "MANUFACTURER" "CUI Inc."
+			(property "MANUFACTURER" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -509,7 +507,7 @@
 					(hide yes)
 				)
 			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "10.16mm"
+			(property "MAXIMUM_PACKAGE_HEIGHT" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -519,7 +517,7 @@
 					(hide yes)
 				)
 			)
-			(property "STANDARD" "Manufacturer Recommendations"
+			(property "STANDARD" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -529,13 +527,76 @@
 					(hide yes)
 				)
 			)
-			(property "PARTREV" "1.02"
+			(property "PARTREV" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "comment" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "cost" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "spare Qty" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Qty stock" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Number" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "X"
+				(at 0 6.985 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 					(hide yes)
 				)
 			)
@@ -549,42 +610,6 @@
 					)
 					(fill
 						(type background)
-					)
-				)
-				(pin input line
-					(at -15.24 2.54 0)
-					(length 5.08)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -15.24 -2.54 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
 					)
 				)
 				(pin output line
@@ -605,10 +630,48 @@
 						)
 					)
 				)
+			)
+			(symbol "PEME1-S5-S5-S_1_0"
+				(pin input line
+					(at -15.24 2.54 0)
+					(length 5.08)
+					(name "+VIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -15.24 -2.54 0)
+					(length 5.08)
+					(name "-VIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at 15.24 -2.54 180)
 					(length 5.08)
-					(name "0V"
+					(name "-VOUT"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -11202,7 +11265,7 @@
 				)
 			)
 		)
-		(property "Value" "RP-1205S"
+		(property "Value" "DRS1-12-S12-S"
 			(at 142.24 75.565 0)
 			(effects
 				(font
@@ -11220,7 +11283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/ProductDetail/RECOM-Power/RP-1205S?qs=8OBu2JtKQqq6GIat8AjVyQ%3D%3D"
+		(property "Datasheet" "https://www.mouser.co.uk/ProductDetail/CUI-Inc/DRS1-12-S12-S?qs=sGAEpiMZZMsc0tfZmXiUnTr9pnMRotOJRoPmEQ7ig4f1IrxG7ygsQw%3D%3D"
 			(at 142.24 82.55 0)
 			(effects
 				(font
@@ -11425,7 +11488,7 @@
 			(uuid "c1337dd9-9aa4-4017-be77-1e300fe597fb")
 		)
 		(instances
-			(project ""
+			(project "HVI"
 				(path "/96589b0c-b051-494a-952b-1d85eb492735"
 					(reference "J2")
 					(unit 1)
@@ -14604,7 +14667,7 @@
 			(uuid "c4ba9878-c9c9-4375-a0c6-839c85eea2f3")
 		)
 		(instances
-			(project ""
+			(project "HVI"
 				(path "/96589b0c-b051-494a-952b-1d85eb492735"
 					(reference "F1.1")
 					(unit 1)
