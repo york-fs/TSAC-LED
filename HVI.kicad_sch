@@ -468,7 +468,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Converter_DCDC:CONV_PEME1-S5-S5-S"
+			(property "Footprint" "yfs:DCDC-12v_12v-DRS1-12-S12-S"
 				(at 0 0 0)
 				(effects
 					(font
@@ -612,24 +612,6 @@
 						(type background)
 					)
 				)
-				(pin output line
-					(at 15.24 2.54 180)
-					(length 5.08)
-					(name "+VOUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 			)
 			(symbol "PEME1-S5-S5-S_1_0"
 				(pin input line
@@ -668,6 +650,24 @@
 						)
 					)
 				)
+				(pin output line
+					(at 15.24 2.54 180)
+					(length 5.08)
+					(name "+VOUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at 15.24 -2.54 180)
 					(length 5.08)
@@ -678,7 +678,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "3"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -11273,7 +11273,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:CONV_PEME1-S5-S5-S"
+		(property "Footprint" "yfs:DCDC-12v_12v-DRS1-12-S12-S"
 			(at 142.24 82.55 0)
 			(effects
 				(font
@@ -11411,10 +11411,10 @@
 		(pin "2"
 			(uuid "09e4ae0f-23da-492c-afd9-3ee51a8195e1")
 		)
-		(pin "5"
+		(pin "3"
 			(uuid "25531e6f-f2b0-4dc1-9ede-0bf7a4c2fb9c")
 		)
-		(pin "7"
+		(pin "4"
 			(uuid "5124630b-9741-4535-9c67-68d046e0acb7")
 		)
 		(instances
