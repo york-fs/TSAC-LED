@@ -2104,6 +2104,7 @@
 			(at -2.999999 0 180)
 			(unlocked yes)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "3580d7a0-bc71-43e4-9c39-4ed4b3ce67af")
 			(effects
 				(font
@@ -2116,6 +2117,7 @@
 			(at -2.999999 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "a442b6ee-48ea-441f-bd3f-a4a8532b6636")
 			(effects
 				(font
@@ -17081,6 +17083,14 @@
 		(layer "F.Cu")
 		(net "Net-(C1-Pad1)")
 		(uuid "953495f2-5eae-4c5f-8c3b-46559b227df0")
+	)
+	(segment
+		(start 108.375 79.795)
+		(end 112.375 79.795)
+		(width 1)
+		(layer "F.Cu")
+		(net "Net-(C1-Pad1)")
+		(uuid "c96c4c75-8ce0-4663-a86e-d1d21e3d5887")
 	)
 	(segment
 		(start 85.72 79.175)
